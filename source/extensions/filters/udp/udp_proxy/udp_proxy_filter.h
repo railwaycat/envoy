@@ -831,6 +831,7 @@ private:
 
     UdpProxyFilter& filter_;
     Upstream::ThreadLocalCluster& cluster_;
+    Upstream::ClusterInfoConstSharedPtr cluster_info_;
     UdpProxyUpstreamStats cluster_stats_;
 
   protected:
